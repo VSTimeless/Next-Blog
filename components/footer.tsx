@@ -13,14 +13,14 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-4">
           <Link
-            href="mailto:volodymyr@example.com"
+            href="mailto:Shchuryshyn@protonmail.com"
             className="text-muted-foreground hover:text-foreground"
             aria-label="Email"
           >
             <Mail className="h-5 w-5" />
           </Link>
           <Link
-            href="https://github.com/volodymyr"
+            href="https://github.com/VSTimeless"
             className="text-muted-foreground hover:text-foreground"
             target="_blank"
             rel="noopener noreferrer"
@@ -29,7 +29,7 @@ export default function Footer() {
             <Github className="h-5 w-5" />
           </Link>
           <Link
-            href="https://linkedin.com/in/volodymyr"
+            href="https://www.linkedin.com/in/vstimeless/"
             className="text-muted-foreground hover:text-foreground"
             target="_blank"
             rel="noopener noreferrer"
