@@ -127,18 +127,18 @@ export default function ContactPage() {
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-muted-foreground" />
                 <a href="mailto:Shchuryshyn@protonmail.com" className="hover:underline">
-                  volodymyr@example.com
+                  Shchuryshyn@protonmail.com
                 </a>
               </div>
               <div className="flex items-center">
                 <Github className="h-5 w-5 mr-3 text-muted-foreground" />
                 <a
-                  href="https://github.com/vstimeless"
+                  href="https://github.com/VSTimeless"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
                 >
-                  github.com/volodymyr
+                  github.com/VSTimeless
                 </a>
               </div>
               <div className="flex items-center">
@@ -149,7 +149,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="hover:underline"
                 >
-                  linkedin.com/in/volodymyr
+                  linkedin.com/in/vstimeless
                 </a>
               </div>
             </CardContent>

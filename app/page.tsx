@@ -157,18 +157,18 @@ export default function Home() {
           </p>
           <div className="flex justify-center space-x-4">
             <Button variant="outline" size="icon" asChild>
-              <a href="mailto:volodymyr@example.com" aria-label="Email">
+              <a href="mailto:Shchuryshyn@protonmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="outline" size="icon" asChild>
-              <a href="https://github.com/volodymyr" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/VSTimeless" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="outline" size="icon" asChild>
               <a
-                href="https://linkedin.com/in/volodymyr"
+                href="https://www.linkedin.com/in/vstimeless/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
