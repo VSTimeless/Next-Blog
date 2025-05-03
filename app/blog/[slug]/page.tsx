@@ -4,8 +4,8 @@ import { ArrowLeft, Calendar, Tag } from "lucide-react"
 
 // This would typically fetch data from your content source
 // For demo purposes, we're using mock data
-const getBlogPost = (slug: string) => {
-  const posts = {
+const getBlogPosts = () => {
+  return {
     "circuit-design-intro": {
       title: "Getting Started with Circuit Design",
       date: "April 25, 2023",
@@ -139,7 +139,18 @@ const getBlogPost = (slug: string) => {
       image: "/placeholder.svg?height=400&width=800",
     },
   }
+}
 
+// This is required for static export with dynamic routes
+export async function generateStaticParams() {
+  const posts = getBlogPosts();
+  return Object.keys(posts).map(slug => ({
+    slug
+  }));
+}
+
+const getBlogPost = (slug: string) => {
+  const posts = getBlogPosts();
   return posts[slug as keyof typeof posts]
 }
 
