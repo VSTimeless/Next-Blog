@@ -126,14 +126,14 @@ export default function ContactPage() {
             <CardContent className="space-y-4">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-muted-foreground" />
-                <a href="mailto:volodymyr@example.com" className="hover:underline">
+                <a href="mailto:Shchuryshyn@protonmail.com" className="hover:underline">
                   volodymyr@example.com
                 </a>
               </div>
               <div className="flex items-center">
                 <Github className="h-5 w-5 mr-3 text-muted-foreground" />
                 <a
-                  href="https://github.com/volodymyr"
+                  href="https://github.com/vstimeless"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -144,7 +144,7 @@ export default function ContactPage() {
               <div className="flex items-center">
                 <Linkedin className="h-5 w-5 mr-3 text-muted-foreground" />
                 <a
-                  href="https://linkedin.com/in/volodymyr"
+                  href="https://www.linkedin.com/in/vstimeless/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
