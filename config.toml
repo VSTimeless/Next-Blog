@@ -11,9 +11,9 @@ canonifyURLs = true
   author = "Volodymyr"
   
   # Social media links
-  github = "https://github.com/username"
-  linkedin = "https://linkedin.com/in/username"
-  email = "volodymyr@example.com"
+  github = "https://github.com/VSTimeless"
+  linkedin = "https://linkedin.com/in/vstimeless"
+  email = "Shchuryshyn@protonmail.com"
 
 [menu]
   [[menu.main]]
