@@ -5,8 +5,8 @@ import { Badge } from "@/components/ui/badge"
 
 // This would typically fetch data from your content source
 // For demo purposes, we're using mock data
-const getProject = (slug: string) => {
-  const projects = {
+const getProjects = () => {
+  return {
     "weather-station": {
       title: "Microcontroller Weather Station",
       date: "October 2023",
@@ -55,8 +55,43 @@ const getProject = (slug: string) => {
       githubUrl: "https://github.com/volodymyr/led-visualizer",
       demoUrl: "https://youtube.com/watch?v=demo-video",
     },
+    "home-automation": {
+      title: "Home Automation System",
+      date: "January 2023",
+      description: "A DIY home automation system integrating various sensors and actuators.",
+      longDescription: `
+        <p>I built a comprehensive home automation system using Raspberry Pi as the central hub, integrating various sensors and actuators throughout my home. The system provides monitoring and control capabilities for lighting, temperature, security, and energy consumption.</p>
+        <p>The core features include:</p>
+        <ul>
+          <li>Smart lighting control with scheduling and motion detection</li>
+          <li>Climate control with temperature and humidity sensors</li>
+          <li>Security cameras with motion alerts</li>
+          <li>Door and window sensors</li>
+          <li>Energy monitoring for major appliances</li>
+          <li>Voice control integration with popular assistants</li>
+          <li>Mobile app for remote monitoring and control</li>
+        </ul>
+        <p>The system uses MQTT protocol for communication between devices, with Node-RED for workflow automation and a custom web interface built with React for user control. Data is stored in an InfluxDB time-series database and visualized using Grafana dashboards.</p>
+        <p>This project taught me a lot about system integration, networking protocols, and creating reliable automated systems. The biggest challenge was creating a unified interface that could handle the diverse range of devices and protocols.</p>
+      `,
+      image: "/placeholder.svg?height=400&width=800",
+      tags: ["Raspberry Pi", "Python", "MQTT", "Node-RED", "IoT", "React"],
+      githubUrl: "https://github.com/volodymyr/home-automation",
+      demoUrl: "",
+    }
   }
+}
 
+// This is required for static export with dynamic routes
+export async function generateStaticParams() {
+  const projects = getProjects();
+  return Object.keys(projects).map(slug => ({
+    slug
+  }));
+}
+
+const getProject = (slug: string) => {
+  const projects = getProjects();
   return projects[slug as keyof typeof projects]
 }
 
