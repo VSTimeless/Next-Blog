@@ -1,0 +1,42 @@
+baseURL = "https://username.github.io/"  # Replace with your GitHub username
+languageCode = "en-us"
+title = "Volodymyr's Personal Website"
+theme = "your-theme-name"  # Replace with your chosen theme
+
+# Enable for better GitHub Pages compatibility
+canonifyURLs = true
+
+[params]
+  description = "Electrical Engineering student sharing projects, thoughts, and interests"
+  author = "Volodymyr"
+  
+  # Social media links
+  github = "https://github.com/username"
+  linkedin = "https://linkedin.com/in/username"
+  email = "volodymyr@example.com"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
+  [[menu.main]]
+    name = "Interests"
+    url = "/interests/"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
