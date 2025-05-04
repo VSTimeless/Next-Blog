@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useState } from "react"
 import { Mail, Github, Linkedin, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -10,6 +8,20 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/use-toast"
+
+// Define simple interface for form elements
+interface FormInputElement {
+  name: string;
+  value: string;
+  target: {
+    name: string;
+    value: string;
+  };
+}
+
+interface FormEventElement {
+  preventDefault: () => void;
+}
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -20,12 +32,12 @@ export default function ContactPage() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: FormInputElement) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEventElement) => {
     e.preventDefault()
     setIsSubmitting(true)
 
