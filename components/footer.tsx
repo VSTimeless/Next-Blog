@@ -37,10 +37,10 @@ export default function Footer() {
           >
             <Linkedin className="h-5 w-5" />
           </Link>
+          <span className="text-sm text-muted-foreground">
+            &copy; {new Date().getFullYear()} Volodymyr. All rights reserved.
+          </span>
         </div>
-      </div>
-      <div className="container mt-4 text-center text-sm text-muted-foreground">
-        &copy; {new Date().getFullYear()} Volodymyr. All rights reserved.
       </div>
     </footer>
   )
