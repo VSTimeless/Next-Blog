@@ -11,6 +11,11 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground">Electrical Engineering Student</p>
           </div>
         </div>
+        
+        <div className="text-sm text-muted-foreground text-center">
+          &copy; {new Date().getFullYear()} Volodymyr. All rights reserved.
+        </div>
+        
         <div className="flex items-center gap-4">
           <Link
             href="mailto:Shchuryshyn@protonmail.com"
@@ -37,9 +42,6 @@ export default function Footer() {
           >
             <Linkedin className="h-5 w-5" />
           </Link>
-          <span className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Volodymyr. All rights reserved.
-          </span>
         </div>
       </div>
     </footer>
