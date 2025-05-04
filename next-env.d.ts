@@ -4,6 +4,11 @@
 // NOTE: This file should not be edited
 // see https://nextjs.org/docs/basic-features/typescript for more information.
 
+declare module "react" {
+  export * from "react";
+  export function useState<T>(initialState: T | (() => T)): [T, React.Dispatch<React.SetStateAction<T>>];
+}
+
 declare module "next/link";
 declare module "next/image";
 declare module "lucide-react";
